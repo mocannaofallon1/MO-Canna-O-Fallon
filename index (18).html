@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>MO Canna O'Fallon | Premium Cannabis Store in O'Fallon, MO</title>
+<meta name="description" content="MO Canna O'Fallon: premium THC, THCA, CBD, CBG and CBN products, federally compliant hemp and friendly guidance at 9027 Veterans Memorial Pkwy, O'Fallon, MO.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,700&family=Manrope:wght@400;600;800&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#06120b;--bg2:#0d2216;--card:#112a1b;--gold:#d9b45a;--gold2:#f1d98f;--sage:#8fc79a;--tx:#e9f1ea;--mut:#a3b8a8;--r:22px}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{background:var(--bg);color:var(--tx);font:400 16px/1.7 Manrope,sans-serif;overflow-x:hidden}
+::selection{background:var(--gold);color:#06120b}
+::-moz-selection{background:var(--gold);color:#06120b}
+a{color:inherit;text-decoration:none}
+h1,h2,h3{font-family:Fraunces,serif;line-height:1.15;font-weight:700}
+h1{font-size:clamp(2.4rem,6vw,4.6rem)}h2{font-size:clamp(1.9rem,4vw,3rem)}
+:focus-visible{outline:2px solid var(--gold);outline-offset:3px}
+.wrap{width:min(1180px,92%);margin:auto}
+section{padding:90px 0}
+.sub{color:var(--mut);max-width:60ch}
+.btn{display:inline-block;padding:14px 30px;border-radius:50px;background:linear-gradient(135deg,var(--gold2),var(--gold));color:#06120b;font-weight:800;border:0;cursor:pointer;box-shadow:0 10px 30px #d9b45a33;transition:transform .3s}
+.btn:hover{transform:translateY(-3px) scale(1.03)}
+.btn.o{background:none;color:var(--gold);border:1.5px solid var(--gold);box-shadow:none}
+/* intro */
+#intro{position:fixed;inset:0;z-index:999;background:radial-gradient(circle,#123524,#04100a);display:grid;place-items:center;text-align:center;perspective:900px;transition:opacity .8s,visibility .8s}
+#intro.off{opacity:0;visibility:hidden}
+#intro img{height:120px;max-width:80vw;transform:rotateY(90deg);animation:spin 1.6s .2s forwards cubic-bezier(.2,.8,.2,1)}
+#intro h2{font-size:clamp(1.4rem,4vw,2.4rem);margin-top:22px;letter-spacing:.35em;color:var(--gold2);overflow:hidden;white-space:nowrap;width:0;animation:type 1.6s 1.2s steps(22) forwards;margin-inline:auto;border-right:3px solid var(--gold)}
+#intro p{margin-top:14px;font-family:monospace;color:var(--sage);opacity:0;animation:fade .6s 2.6s forwards}
+@keyframes spin{to{transform:rotateY(0)}}@keyframes type{to{width:11.2em}}@keyframes fade{to{opacity:1}}
+/* header */
+header{position:fixed;top:0;left:0;right:0;z-index:100;background:#06120bcc;backdrop-filter:blur(14px);border-bottom:1px solid #d9b45a30}
+.nav{display:flex;align-items:center;justify-content:space-between;height:84px}
+.brand{display:flex;align-items:center;gap:12px;font-family:Fraunces,serif;font-weight:700;font-size:1.15rem;color:var(--gold2)}
+.brand img{height:58px;width:auto;object-fit:contain}
+nav ul{display:flex;gap:6px;list-style:none;align-items:center}
+nav a.l{padding:10px 13px;border-radius:30px;font-weight:600;font-size:.93rem;display:block}
+nav a.l:hover,nav a.l.on{color:var(--gold2);background:#d9b45a1a}
+.dd{position:relative}
+.dd .m{position:absolute;top:100%;left:0;min-width:250px;background:var(--bg2);border:1px solid #d9b45a40;border-radius:16px;padding:10px;opacity:0;visibility:hidden;transform:translateY(10px) rotateX(-12deg);transform-origin:top;transition:.3s}
+.dd:hover .m,.dd:focus-within .m{opacity:1;visibility:visible;transform:none}
+.m a{display:block;padding:8px 14px;border-radius:10px;font-size:.92rem}.m a:hover{background:#d9b45a22;color:var(--gold2)}
+#bg{display:none;background:none;border:1px solid var(--gold);color:var(--gold);border-radius:10px;padding:8px 12px;font-size:1.2rem}
+/* hero */
+.hero{min-height:100vh;display:flex;align-items:center;padding:130px 0 70px;background:radial-gradient(ellipse at 75% 30%,#1c4a2f 0%,transparent 55%),var(--bg);perspective:1200px;overflow:hidden}
+.hero .wrap{display:grid;grid-template-columns:1.1fr .9fr;gap:40px;align-items:center}
+.hero h1 span{color:var(--gold2)}
+.hero p{margin:22px 0 30px;color:var(--mut);max-width:52ch}
+.stage{position:relative;height:460px;perspective:1100px}
+.tilt{position:absolute;inset:0;transform-style:preserve-3d;transition:transform .2s;transform:rotateX(-10deg)}
+.ring{position:absolute;inset:0;transform-style:preserve-3d;animation:rot 28s linear infinite}
+.stage:hover .ring{animation-play-state:paused}
+.f{position:absolute;left:50%;top:50%;width:170px;height:235px;margin:-118px 0 0 -85px;border-radius:18px;background:#123524 center/cover;border:1px solid var(--gold);box-shadow:0 25px 50px #000b;transform:rotateY(calc(var(--i)*60deg)) translateZ(270px);display:flex;align-items:flex-end;overflow:hidden}
+.f b{width:100%;padding:30px 10px 10px;background:linear-gradient(transparent,#040d08f0);font:700 .9rem Fraunces,serif;color:var(--gold2);text-align:center}
+.core{position:absolute;left:50%;top:50%;width:120px;height:120px;margin:-60px;border-radius:50%;background:radial-gradient(circle,#6fcf8a,#123524 70%);box-shadow:0 0 90px 30px #2f7a4666;transform:translateZ(0)}
+@keyframes rot{to{transform:rotateY(360deg)}}
+.hero-img{position:absolute;inset:0;border-radius:36px;background:#123524 center/cover;box-shadow:0 40px 80px #000a,0 0 0 1px #d9b45a55;transform:rotateY(-18deg) rotateX(6deg);transition:transform .15s}
+.orb{position:absolute;border-radius:50%;background:radial-gradient(circle at 30% 30%,var(--gold2),#7a5d1c);box-shadow:0 20px 40px #0008;animation:fl 6s ease-in-out infinite}
+.o1{width:90px;height:90px;top:-20px;left:-30px;transform:translateZ(90px)}.o2{width:60px;height:60px;bottom:30px;right:-20px;animation-delay:-2s;transform:translateZ(120px);background:radial-gradient(circle at 30% 30%,#c8f0cf,#2f7a46)}
+@keyframes fl{50%{translate:0 -22px}}
+/* 3D reveal */
+.rv{opacity:0;transform:perspective(900px) rotateX(18deg) translateY(60px) scale(.96);transition:1s cubic-bezier(.2,.8,.2,1)}
+.rv.in{opacity:1;transform:none}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:26px;margin-top:46px;perspective:1000px}
+.card{background:linear-gradient(160deg,var(--card),#0a1b12);border:1px solid #d9b45a30;border-radius:var(--r);overflow:hidden;transition:transform .2s,box-shadow .3s;transform-style:preserve-3d;will-change:transform}
+.card:hover{box-shadow:0 30px 60px #000a,0 0 0 1px var(--gold)}
+.card .im{height:190px;background:linear-gradient(135deg,#1c4a2f,#0d2216) center/cover}
+.card .b{padding:22px}.card h3{font-size:1.3rem;margin-bottom:8px}.card p{color:var(--mut);font-size:.95rem;margin-bottom:14px}
+.alt{background:var(--bg2)}
+.why{padding:28px}.why b{display:block;font-family:Fraunces,serif;font-size:1.25rem;color:var(--gold2);margin-bottom:6px}
+.split{display:grid;grid-template-columns:1fr 1fr;gap:50px;align-items:center}
+.split .pic{height:420px;border-radius:var(--r);background:center/cover;box-shadow:0 30px 70px #000a;transform:perspective(1000px) rotateY(10deg)}
+.rev{padding:28px}.rev .st{color:var(--gold);letter-spacing:3px}.rev i{display:block;margin-top:14px;color:var(--sage);font-style:normal;font-weight:600}
+details{background:var(--card);border:1px solid #d9b45a30;border-radius:16px;padding:18px 22px;margin-bottom:14px}
+summary{cursor:pointer;font-weight:700;list-style:none}summary::after{content:"+";float:right;color:var(--gold)}details[open] summary::after{content:"–"}
+details p{margin-top:10px;color:var(--mut)}
+.ph{padding:170px 0 70px;background:radial-gradient(ellipse at 80% 0,#1c4a2f,transparent 60%),var(--bg)}
+.ph .tag{color:var(--gold);font-weight:600;margin-bottom:10px}
+.pill{display:inline-block;padding:8px 18px;margin:6px;border:1px solid #d9b45a55;border-radius:40px;background:var(--card)}
+.gal{columns:3 260px;gap:18px;margin-top:40px}.gi{display:block;position:relative;height:240px;margin-bottom:18px;border-radius:18px;background:#123524 center/cover;border:1px solid #d9b45a30;overflow:hidden;break-inside:avoid;transition:transform .4s}.gi:nth-child(3n+2){height:330px}.gi:hover{transform:scale(1.04) rotate(-1deg)}.gi span{position:absolute;left:0;right:0;bottom:0;padding:40px 16px 14px;background:linear-gradient(transparent,#040d08ee);font-family:Fraunces,serif;font-weight:700;color:var(--gold2)}
+.cinfo{display:grid;grid-template-columns:1fr 1fr;gap:40px}
+.cinfo form{display:grid;gap:14px}
+input,textarea{width:100%;padding:14px 18px;border-radius:14px;border:1px solid #d9b45a40;background:var(--card);color:var(--tx);font:inherit}
+.notice{font-size:.85rem;color:var(--mut);margin-top:18px}
+footer{background:#040d08;border-top:1px solid #d9b45a30;padding:70px 0 24px}
+.fg{display:grid;grid-template-columns:1.2fr .8fr 1.2fr 1.4fr;gap:34px}
+footer h3{font-size:1.1rem;color:var(--gold2);margin-bottom:14px}footer li{list-style:none;margin-bottom:8px;color:var(--mut);font-size:.93rem}footer a:hover{color:var(--gold2)}
+footer iframe{width:100%;height:190px;border-radius:14px;margin-top:6px}
+.copy{text-align:center;margin-top:44px;color:var(--mut);font-size:.85rem;border-top:1px solid #d9b45a20;padding-top:20px}
+@media(max-width:940px){.f{width:120px;height:170px;margin:-85px 0 0 -60px;transform:rotateY(calc(var(--i)*60deg)) translateZ(170px)}.hero .wrap,.split,.cinfo{grid-template-columns:1fr}.fg{grid-template-columns:1fr 1fr}.stage{height:320px}
+#bg{display:block}nav ul{position:absolute;top:84px;left:0;right:0;flex-direction:column;background:var(--bg);padding:14px;display:none;max-height:80vh;overflow:auto}nav ul.open{display:flex}.dd .m{position:static;opacity:1;visibility:visible;transform:none;border:0;padding:0 0 0 12px;background:none}.brand span{display:none}}
+@media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}.rv{opacity:1;transform:none}#intro{display:none}}
+</style>
+</head>
+<body>
+<div id="intro"><div><img src="https://mocannaofallon.com/wp-content/uploads/2025/04/header-logo.svg" alt="MO Canna O'Fallon logo"><h2>MO CANNA O'FALLON</h2><p>&gt; loading premium experience_</p></div></div>
+<header><div class="wrap nav">
+<a class="brand" href="#/"><img src="https://mocannaofallon.com/wp-content/uploads/2025/04/header-logo.svg" alt="MO Canna O'Fallon logo"><span>MO Canna O'Fallon</span></a>
+<nav><ul id="nv"></ul></nav><button id="bg" aria-label="Menu">☰</button></div></header>
+<main id="app"></main>
+<footer><div class="wrap"><div class="fg">
+<div><h3>MO Canna O'Fallon</h3><p class="sub" style="font-size:.93rem">Premium THC, THCA, CBD, CBG and CBN products with guidance you can count on. Adults 21+ only.</p></div>
+<div><h3>Quick Links</h3><ul><li><a href="#/">Home</a></li><li><a href="#/about">About Us</a></li><li><a href="#/service/flower">Services</a></li><li><a href="#/contact">Contact</a></li></ul></div>
+<div><h3>Contact Information</h3><ul><li>📍 9027 Veterans Memorial Pkwy, O'Fallon, MO 63366</li><li>📞 <a href="tel:6363786656">(636) 378-6656</a></li><li>✉️ <a href="mailto:mocannaofallon@gmail.com">mocannaofallon@gmail.com</a></li><li>🕘 Mon–Sat: 9:00 AM – 9:00 PM<br>🕙 Sunday: 10:00 AM – 5:00 PM</li></ul></div>
+<div><h3>Find Us</h3><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2368.434143478191!2d-90.71269670000001!3d38.80201590000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x87ded145f7f71a37%3A0x361dc8d369a28a2f!2sMO%20Canna%20O'Fallon!5e1!3m2!1sen!2s!4v1793608792714!5m2!1sen!2s" style="border:0" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin" title="Map"></iframe></div>
+</div><p class="copy">© 2026 MO Canna O'Fallon. All rights reserved. Must be 21+ with valid ID. Keep out of reach of children.</p></div></footer>
+<script>
+const PAL=[["#1c4a2f","#06120b"],["#2a5a3a","#0a1a10"],["#3a4a1c","#10160a"],["#1c4a48","#061212"]];
+const leaf=(c,o,x=200,y=330,k=1)=>`<g transform="translate(${x} ${y}) scale(${k}) translate(-200 -330)" fill="${c}" opacity="${o}">${[-75,-40,0,40,75].map(a=>`<ellipse cx="200" cy="${a==0?225:250}" rx="${a==0?20:16}" ry="${a==0?105:85}" transform="rotate(${a} 200 330)"/>`).join("")}<rect x="197" y="320" width="6" height="90"/></g>`;
+const ART={
+flower:`<g>${[[200,300,70],[150,330,55],[250,335,55],[200,370,60],[170,260,45],[235,265,45]].map(b=>`<circle cx="${b[0]}" cy="${b[1]}" r="${b[2]}" fill="#5fae5f"/><circle cx="${b[0]-b[2]/4}" cy="${b[1]-b[2]/4}" r="${b[2]*.6}" fill="#7fce7a"/>`).join("")}${[[170,290],[220,320],[150,350],[240,360],[200,255],[190,390]].map(h=>`<path d="M${h[0]} ${h[1]}q18 -26 30 -8" stroke="#f0a24a" stroke-width="5" fill="none" stroke-linecap="round"/>`).join("")}</g>`,
+thca:`<g stroke="#f1d98f" stroke-width="2"><polygon points="200,170 290,260 200,400 110,260" fill="#e9f6ff" fill-opacity=".85"/><polygon points="200,170 245,260 200,400 155,260" fill="#bfe3f5" fill-opacity=".9"/><polygon points="110,260 290,260 245,260 155,260" fill="none"/><polygon points="120,350 160,300 190,380" fill="#d9b45a" fill-opacity=".8"/><polygon points="300,330 270,290 245,375" fill="#d9b45a" fill-opacity=".8"/></g>`,
+prerolls:`<g transform="rotate(-35 200 300)"><path d="M120 270 L330 290 L330 320 L120 330 Z" fill="#f3efe2"/><path d="M120 270 L90 285 L90 315 L120 330Z" fill="#d9d2bd"/><rect x="326" y="288" width="22" height="34" rx="5" fill="#7a5d1c"/><circle cx="104" cy="300" r="10" fill="#ff7a2f"/><path d="M150 276 L152 328 M210 281 L212 324" stroke="#cfc7ae" stroke-width="2"/></g><path d="M110 150q20 -40 0 -70M150 160q20 -40 0 -70" stroke="#ffffff55" stroke-width="6" fill="none" stroke-linecap="round"/>`,
+edibles:`<g>${[["#e0527a",120,260,-14],["#f2a93b",210,230,10],["#6fcf5a",270,300,20],["#5aa7e0",150,340,-8]].map(g=>`<rect x="${g[1]}" y="${g[2]}" width="76" height="82" rx="26" fill="${g[0]}" transform="rotate(${g[3]} ${g[1]+38} ${g[2]+41})"/><circle cx="${g[1]+26}" cy="${g[2]+26}" r="10" fill="#fff" opacity=".35"/>`).join("")}<rect x="130" y="400" width="150" height="50" rx="8" fill="#5a3320"/><path d="M180 400v50M230 400v50" stroke="#3a2012" stroke-width="3"/></g>`,
+vapes:`<rect x="170" y="180" width="60" height="30" rx="8" fill="#d9b45a"/><rect x="165" y="205" width="70" height="60" rx="10" fill="#cfe8d6" fill-opacity=".6" stroke="#8fc79a" stroke-width="3"/><rect x="175" y="225" width="50" height="35" fill="#e0a83a"/><rect x="160" y="265" width="80" height="170" rx="22" fill="#0d2216" stroke="#d9b45a" stroke-width="3"/><circle cx="200" cy="340" r="14" fill="#6fcf8a"/><path d="M200 150q-30 -30 0 -60t30 -30" stroke="#ffffff66" stroke-width="10" fill="none" stroke-linecap="round"/>`,
+concentrates:`<rect x="130" y="270" width="140" height="150" rx="20" fill="#d99a2b"/><rect x="130" y="270" width="140" height="150" rx="20" fill="url(#sh)"/><rect x="120" y="235" width="160" height="44" rx="10" fill="#1a1a1a"/><rect x="120" y="235" width="160" height="12" rx="6" fill="#d9b45a"/><circle cx="170" cy="330" r="22" fill="#f7cf6a" opacity=".7"/><rect x="300" y="190" width="14" height="230" rx="6" fill="#bfc9c2" transform="rotate(20 300 420)"/>`,
+cbd:`<rect x="150" y="300" width="100" height="140" rx="20" fill="#2f7a46"/><rect x="165" y="340" width="70" height="60" rx="8" fill="#e9f1ea"/><rect x="175" y="258" width="50" height="48" fill="#1a1a1a"/><path d="M200 258V200" stroke="#bfc9c2" stroke-width="10"/><ellipse cx="200" cy="180" rx="22" ry="34" fill="#1a1a1a"/><path d="M200 120q-16 26 0 40q16 -14 0 -40Z" fill="#d9b45a"/>${leaf("#8fc79a",.9,200,372,.22)}`,
+accessories:`<path d="M120 380q-40 0 -40 -60t60 -60h40v60q0 60 -60 60Z" fill="#5aa7a0" fill-opacity=".8" stroke="#bfe3f0" stroke-width="3" transform="translate(40 -20)"/><rect x="200" y="215" width="130" height="30" rx="14" fill="#5aa7a0" fill-opacity=".8" transform="rotate(-18 200 230)"/><circle cx="290" cy="400" r="58" fill="#7a5d1c"/><circle cx="290" cy="400" r="40" fill="#d9b45a"/><circle cx="290" cy="400" r="12" fill="#06120b"/>`,
+leaf:leaf("#7fce7a",1,200,380,1.2)
+};
+const MAP={"cannabis,flower,bud":"flower","cannabis,plant,green":"thca","joint,cannabis,smoke":"prerolls","gummies,candy,chocolate":"edibles","vape,cartridge,pen":"vapes","amber,honey,crystal":"concentrates","hemp,oil,herbal":"cbd","glass,pipe,grinder":"accessories"};
+const IMG=(k,w,h,l=1)=>{const c=PAL[l%4],a=MAP[k]||"leaf";const svg=`<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 500" preserveAspectRatio="xMidYMid slice"><defs><radialGradient id="g" cx="50%" cy="40%" r="75%"><stop offset="0" stop-color="${c[0]}"/><stop offset="1" stop-color="${c[1]}"/></radialGradient><linearGradient id="sh" x1="0" x2="1"><stop offset="0" stop-color="#fff" stop-opacity=".25"/><stop offset="1" stop-color="#000" stop-opacity=".3"/></linearGradient></defs><rect width="400" height="500" fill="url(#g)"/>${leaf("#ffffff",.05,200,500,2.4)}<ellipse cx="200" cy="445" rx="130" ry="18" fill="#000" opacity=".35"/><g>${ART[a]}</g><rect x="10" y="10" width="380" height="480" rx="20" fill="none" stroke="#d9b45a" stroke-opacity=".35"/></svg>`;return "data:image/svg+xml;utf8,"+encodeURIComponent(svg).replace(/'/g,"%27")};
+const S=[
+["hemp-flower","Hemp Flower","Fresh, aromatic hemp flower in a range of strains.","cannabis,flower,bud","Browse hemp flower chosen for aroma, appearance and value. Our team will help you compare strains and find one that suits your taste and routine.",["Indica, sativa and hybrid-style strains","Ounce flower deals","Clearly labeled jars"],"images/hemp-flower.jpg"],
+["thca","THCA Products","THCA flower and more at affordable prices.","cannabis,plant,green","THCA is the natural precursor found in raw cannabis. We carry THCA flower and related products, and we explain how they work before you buy.",["THCA flower","Lab-tested products","Honest staff guidance"],"images/thca.jpg"],
+["hemp-pre-rolls","Hemp Pre-Rolls","Ready to enjoy, rolled with care.","joint,cannabis,smoke","Convenient singles and multi-packs for first-timers and regulars alike. Simple, consistent and easy to share.",["Singles and packs","Infused options","Great value"],"images/hemp-pre-rolls.jpg"],
+["hemp-edibles","Hemp Edibles","Gummies, chocolates and drinks with clear dosing.","gummies,candy,chocolate","Discreet, tasty and clearly labeled. Start low and go slow. We will help you choose the right strength and flavor.",["Gummies and chocolates","THC beverages","Low to high strengths"],"images/hemp-edibles.jpg"],
+["vape-products","Cannabis Vape Products","Smooth, flavorful and portable.","vape,cartridge,pen","Disposables and cartridges in a variety of flavor profiles. Ask us about hardware, batteries and what suits you.",["Disposables","Cartridges","Batteries"],"images/vape-products.jpg"],
+["cbd-products","CBD, CBG & CBN Products","Federally compliant hemp for everyday balance.","hemp,oil,herbal","Hemp-derived CBD, CBG and CBN in tinctures, gummies and topicals. Our team can explain each cannabinoid so you can choose with confidence.",["Tinctures and softgels","Gummies and topicals","Federally compliant hemp"],"images/cbd-products.jpg"]];
+const BG=(s,l)=>`url('${s[7]}'),url('${IMG(s[3],0,0,l)}')`;
+const REV=[["Walked in with questions and left with the perfect strain. The team was patient and never pushy.","Verified customer"],["Clean, bright store and fair prices. The THCA selection is the best I have found nearby.","Local shopper"],["Quick in and out, and the staff really know their products. My go-to spot in O'Fallon.","Repeat customer"]];
+const FAQ=[["Who can shop at MO Canna O'Fallon?","Adults 21 and older with a valid government photo ID."],["What are your hours?","Monday to Saturday 9:00 AM to 9:00 PM, and Sunday 10:00 AM to 5:00 PM."],["What is the difference between THC, THCA, CBD, CBG and CBN?","They are different cannabinoids with different effects. Our staff will explain each one so you can choose with confidence."],["Is your hemp federally compliant?","Yes. Our hemp products are made to meet federal requirements."],["Can I ask for help choosing a product?","Always. Guidance is part of every visit."]];
+const WHY=[["Premium Quality","Carefully sourced products from trusted growers and makers."],["Prices You Appreciate","Everyday value across flower, edibles, vapes and hemp."],["Guidance You Can Count On","Friendly, informed staff who listen first."],["A Smooth Visit","Easy parking, clear labels and fast service."]];
+const card=(s,i)=>`<a class="card rv" href="#/service/${s[0]}"><div class="im" style="background-image:${BG(s,i+1)}"></div><div class="b"><h3>${s[1]}</h3><p>${s[2]}</p><span style="color:var(--gold);font-weight:800">Learn more</span></div></a>`;
+const ph=(t,d)=>`<section class="ph"><div class="wrap rv"><p class="tag">MO Canna O'Fallon</p><h1>${t}</h1><p class="sub" style="margin-top:16px">${d}</p></div></section>`;
+const cta=`<section><div class="wrap rv" style="text-align:center"><h2>Ready to visit?</h2><p class="sub" style="margin:14px auto 26px">Stop by or call (636) 378-6656. We are open every day.</p><a class="btn" href="#/contact">Contact Us</a></div></section>`;
+const P={
+home:()=>`<section class="hero"><div class="wrap"><div class="rv in"><h1>Cannabis, curated with care in <span>O'Fallon</span></h1><p>Premium THC, THCA, CBD, CBG and CBN products, federally compliant hemp, and a team that helps you choose with confidence.</p><a class="btn" href="#services">Explore Services</a> <a class="btn o" href="tel:6363786656">Call Now</a></div>
+<div class="stage" id="stg"><div class="tilt" id="hi"><div class="core"></div><div class="ring">${S.map((x,k)=>`<div class="f" style="--i:${k};background-image:${BG(x,k+1)}"><b>${x[1]}</b></div>`).join("")}</div></div><div class="orb o1"></div><div class="orb o2"></div></div></div></section>
+<section id="services"><div class="wrap"><h2 class="rv">Our Services</h2><p class="sub rv">Pick a category to see what we carry.</p><div class="grid">${S.map(card).join("")}</div></div></section>
+<section class="alt"><div class="wrap split"><div class="pic rv" style="background-image:url('${IMG("cannabis,greenhouse",800,800,30)}')"></div><div class="rv"><h2>About Us</h2><p class="sub" style="margin:16px 0">MO Canna O'Fallon is a neighborhood cannabis store built on three things: products you can trust, prices that feel fair, and guidance without pressure. Whether it is your first visit or your fiftieth, we take time to understand what you are looking for.</p><a class="btn o" href="#/about">Read Our Story</a></div></div></section>
+<section><div class="wrap"><h2 class="rv">Why Choose Us</h2><div class="grid">${WHY.map(w=>`<div class="card why rv"><b>${w[0]}</b><p class="sub">${w[1]}</p></div>`).join("")}</div></div></section>
+<section class="alt"><div class="wrap"><h2 class="rv">Customer Reviews</h2><div class="grid">${REV.map(r=>`<div class="card rev rv"><span class="st">★★★★★</span><p style="margin-top:10px">${r[0]}</p><i>${r[1]}</i></div>`).join("")}</div><p style="margin-top:34px"><a class="btn" target="_blank" rel="noopener" href="https://maps.app.goo.gl/usVGDjEEsMfQx5pH8">Read &amp; Write Reviews on Google</a></p></div></section>
+<section><div class="wrap" style="max-width:820px"><h2 class="rv" style="margin-bottom:34px">Frequently Asked Questions</h2>${FAQ.map(f=>`<details class="rv"><summary>${f[0]}</summary><p>${f[1]}</p></details>`).join("")}</div></section>`,
+about:()=>ph("About MO Canna O'Fallon","A local store focused on quality, value and honest guidance.")+`<section><div class="wrap split"><div class="rv"><h2>Who we are</h2><p class="sub" style="margin:16px 0">We opened MO Canna O'Fallon to give the community a calm, welcoming place to explore cannabis and hemp. Our shelves feature THC, THCA, CBD, CBG and CBN products chosen for quality and variety.</p><p class="sub">Every team member is trained to answer questions clearly, so you can shop with confidence and leave feeling supported.</p></div><div class="pic rv" style="background-image:url('${IMG("cannabis,shop",800,800,40)}')"></div></div></section><section class="alt"><div class="wrap"><h2 class="rv">What we stand for</h2><div class="grid">${WHY.map(w=>`<div class="card why rv"><b>${w[0]}</b><p class="sub">${w[1]}</p></div>`).join("")}</div></div></section>`+cta,
+gallery:()=>ph("Gallery","A look at everything we carry, from flower to hemp wellness.")+`<section><div class="wrap"><div class="gal">${S.concat(S.slice(0,3)).map((g,i)=>`<a class="gi rv" href="#/service/${g[0]}" style="background-image:${BG(g,60+i)}"><span>${g[1]}</span></a>`).join("")}</div></div></section>`+cta,
+contact:()=>ph("Contact Us","Questions about products or hours? Reach out.")+`<section><div class="wrap cinfo"><div class="rv"><h2 style="font-size:1.8rem">Visit our store</h2><p class="sub" style="margin:16px 0">📍 9027 Veterans Memorial Pkwy, O'Fallon, MO 63366<br>📞 <a href="tel:6363786656">(636) 378-6656</a><br>✉️ <a href="mailto:mocannaofallon@gmail.com">mocannaofallon@gmail.com</a><br>🕘 Mon–Sat: 9:00 AM – 9:00 PM<br>🕙 Sunday: 10:00 AM – 5:00 PM</p><a class="btn o" target="_blank" rel="noopener" href="https://maps.app.goo.gl/usVGDjEEsMfQx5pH8">Get Directions</a></div>
+<form class="rv" onsubmit="event.preventDefault();location.href='mailto:mocannaofallon@gmail.com?subject='+encodeURIComponent('Website inquiry from '+n.value)+'&body='+encodeURIComponent(m.value+'\\nPhone: '+p.value)"><input id="n" placeholder="Your name" required><input id="p" placeholder="Phone number"><textarea id="m" rows="5" placeholder="How can we help?" required></textarea><button class="btn">Send Message</button></form></div></section>`,
+service:id=>{const i=S.findIndex(s=>s[0]==id);if(i<0)return P.home();const s=S[i];return ph(s[1],s[2])+`<section><div class="wrap split"><div class="pic rv" style="background-image:${BG(s,i+1)}"></div><div class="rv"><h2>${s[1]}</h2><p class="sub" style="margin:16px 0">${s[5]}</p><p>${s[6].map(x=>`<span class="pill">${x}</span>`).join("")}</p><p class="notice">Adults 21+ only. Please consume responsibly.</p><a class="btn" href="#/contact" style="margin-top:20px">Ask Our Team</a></div></div></section><section class="alt"><div class="wrap"><h2 class="rv">More Services</h2><div class="grid">${S.filter(x=>x[0]!=id).slice(0,3).map((x,k)=>card(x,S.indexOf(x))).join("")}</div></div></section>`+cta}};
+const nv=document.getElementById("nv");
+nv.innerHTML=`<li><a class="l" href="#/">Home</a></li><li><a class="l" href="#/about">About Us</a></li><li class="dd"><a class="l" href="#/service/flower">Services ▾</a><div class="m">${S.map(s=>`<a href="#/service/${s[0]}">${s[1]}</a>`).join("")}</div></li><li><a class="l" href="#/gallery">Gallery</a></li><li><a class="l" href="#/contact">Contact Us</a></li>`;
+document.getElementById("bg").onclick=()=>nv.classList.toggle("open");
+function route(){const h=location.hash.replace("#/","").split("/");const k=h[0]||"home";
+if(location.hash=="#services")return;
+document.getElementById("app").innerHTML=k=="service"?P.service(h[1]):(P[k]||P.home)();
+nv.classList.remove("open");window.scrollTo(0,0);
+nv.querySelectorAll("a.l").forEach(a=>a.classList.toggle("on",a.getAttribute("href")==("#/"+(k=="home"?"":k=="service"?"service/flower":k))));
+document.title=(k=="home"?"MO Canna O'Fallon | Premium Cannabis Store in O'Fallon, MO":k.charAt(0).toUpperCase()+k.slice(1)+" | MO Canna O'Fallon");
+const io=new IntersectionObserver(e=>e.forEach(x=>x.isIntersecting&&(x.target.classList.add("in"),io.unobserve(x.target))),{threshold:.15});
+document.querySelectorAll(".rv").forEach(e=>io.observe(e));
+document.querySelectorAll(".card").forEach(c=>{c.onmousemove=e=>{const r=c.getBoundingClientRect(),x=(e.clientX-r.left)/r.width-.5,y=(e.clientY-r.top)/r.height-.5;c.style.transition="box-shadow .3s";c.style.transform=`perspective(800px) rotateY(${x*12}deg) rotateX(${-y*12}deg) translateZ(10px)`};c.onmouseleave=()=>{c.style.transition=".5s";c.style.transform=""}});
+const hi=document.getElementById("hi");if(hi)hi.parentNode.onmousemove=e=>{const r=hi.getBoundingClientRect();hi.style.transform=`rotateX(${-10-((e.clientY-r.top)/r.height-.5)*22}deg) rotateY(${((e.clientX-r.left)/r.width-.5)*30}deg)`}}
+addEventListener("hashchange",()=>{if(location.hash=="#services")return document.getElementById("services")?.scrollIntoView({behavior:"smooth"});route()});
+addEventListener("scroll",()=>{const s=scrollY,hi=document.getElementById("hi");document.querySelectorAll(".orb").forEach((o,i)=>o.style.marginTop=(s*(.12+i*.08))+"px");document.querySelectorAll(".pic").forEach(p=>p.style.backgroundPositionY=50+Math.min(s/40,20)+"%")},{passive:true});
+route();setTimeout(()=>document.getElementById("intro").classList.add("off"),3400);
+</script>
+</body>
+</html>
